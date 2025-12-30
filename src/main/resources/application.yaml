@@ -11,7 +11,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     open-in-view: false
     show-sql: true
     properties:
@@ -21,5 +21,8 @@ spring:
   mvc:
     problemdetails:
       enabled: true
+
+  profiles:
+    active: dev
 
 
