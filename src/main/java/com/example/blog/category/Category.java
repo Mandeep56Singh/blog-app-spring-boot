@@ -19,11 +19,12 @@ import java.util.Objects;
 @Table(name = "categories")
 public class Category extends BaseEntity {
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 50)
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
     private final List<Post> posts = new ArrayList<>();
+
 
     private Category(CategoryBuilder categoryBuilder) {
         this.name = categoryBuilder.name;
