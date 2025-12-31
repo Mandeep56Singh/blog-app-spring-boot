@@ -17,12 +17,3 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
-  mvc:
-    problemdetails:
-      enabled: true
-
-  profiles:
-    active: dev
-
-
